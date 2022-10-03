@@ -1,0 +1,66 @@
+.carousel {
+  margin: auto;
+  position: relative;
+  width: 1280px;
+  height: 500px;
+  background: $color-white url(./../../../image/image\ 6.png) no-repeat bottom
+    center;
+
+  .carousel__img {
+    position: absolute;
+    width: 821px;
+    height: 392px;
+    left: 86px;
+    top: 5px;
+    background: url(./../../../image/image\ 4.png);
+  }
+  .carousel__content {
+    position: absolute;
+    top: 126px;
+    right: 92px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $color-black;
+  }
+  .carousel__name {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 3px;
+  }
+  .carousel__descrip {
+    margin-bottom: 24px;
+  }
+  .carousel__btn {
+    display: inline-block;
+    font-size: 20px;
+    color: $color-white;
+    background-color: $color-bg-buy-2;
+    padding: 13px 35px;
+  }
+
+  .carousel__elip {
+    position: absolute;
+    bottom: 86px;
+    left: 600px;
+    display: flex;
+    .carousel__elip--item {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.13);
+      margin: 10px;
+    }
+  }
+  .carousel__pre {
+    display: inline-block;
+    position: absolute;
+    bottom: 265px;
+    left: 20px;
+  }
+  .carousel__next {
+    display: inline-block;
+    position: absolute;
+    bottom: 265px;
+    right: 20px;
+  }
+}

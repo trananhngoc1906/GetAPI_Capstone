@@ -1,0 +1,27 @@
+.product {
+  margin: auto;
+  height: 1074px;
+  width: 1280px;
+  position: relative;
+  background: $color-white-2;
+  h1 {
+    position: absolute;
+    left: 476px;
+    top: 45px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .product__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product__item {
+    width: calc(100% / 3);
+    background: $color-bg-img;
+
+    .product__item--img {
+    }
+  }
+}
