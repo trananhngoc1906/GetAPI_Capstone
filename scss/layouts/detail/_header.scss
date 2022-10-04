@@ -1,0 +1,61 @@
+header {
+  margin: auto;
+  position: relative;
+  width: 1280px;
+  height: 50px;
+  border: 1px solid $color-black;
+  background-color: $color-black;
+  .header__left {
+    position: absolute;
+    background: url(./../../../image/image\ 3.png);
+    width: 116px;
+    height: 32px;
+    left: 24px;
+    top: 10px;
+  }
+  .header__right {
+    color: $color-white-1;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 300;
+    .header__right--cart {
+      position: absolute;
+      width: 66px;
+      height: 36px;
+      left: 1027px;
+      top: 6px;
+      .header__right--img {
+        background: url(./../../../image/image\ 8.png);
+        position: absolute;
+        left: 0%;
+        right: 53.03%;
+        top: 8.33%;
+        bottom: 5.56%;
+      }
+      .header__right--number {
+        position: absolute;
+        left: 46.97%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+        color: $color-white;
+      }
+    }
+
+    .header__right--signup {
+      .header__right--login {
+        position: absolute;
+        left: 1103px;
+        top: 15px;
+      }
+      .header__right--register {
+        position: absolute;
+        left: 1170px;
+        top: 15px;
+      }
+    }
+  }
+}

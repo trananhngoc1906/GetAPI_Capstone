@@ -1,27 +1,21 @@
 .product {
   margin: auto;
-  height: 1074px;
+  height: 1048px;
   width: 1280px;
   position: relative;
   background: $color-white-2;
+
   .product__text {
     text-align: center;
-    padding-top: 45px;
+    padding-top: 20px;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
   }
   .product__content {
-    padding: 65px 65px;
+    padding: 45px 65px 0;
     .product__item--top {
       display: flex;
-      .product__item:last-child {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        .product__item--content .product__item--buy .product__item--price {
-          font-weight: 800;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-      }
     }
     .product__item--bot {
       display: flex;
@@ -30,7 +24,7 @@
       position: relative;
       width: 334px;
       height: 369px;
-      margin: 25px 35px;
+      margin: 48px 31px 0;
       background: $color-bg-img;
       font-weight: 300;
 
