@@ -12,6 +12,10 @@ li {
   list-style: none;
 }
 
+input {
+  outline: none;
+}
+
 body,
 html {
   font-family: "Inter", sans-serif;
@@ -144,10 +148,11 @@ header .header__right .header__right--signup .header__right--register {
   line-height: 36px;
 }
 .carousel .carousel__right .carousel__right--text {
+  height: 76px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  margin-top: 6px;
+  margin-top: 9px;
   padding-right: 200px;
   color: #140101;
 }
@@ -156,7 +161,7 @@ header .header__right .header__right--signup .header__right--register {
   font-size: 24px;
   line-height: 29px;
   color: #1ed90e;
-  margin: 14px 0 18px;
+  margin: 14px 0 19px;
 }
 .carousel .carousel__right .carousel__right--size {
   font-size: 24px;
@@ -208,7 +213,7 @@ header .header__right .header__right--signup .header__right--register {
   background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
   margin-top: 7px;
   border: none;
-  padding: 18px 29px;
+  padding: 17px 29px;
   cursor: pointer;
 }
 
@@ -221,13 +226,13 @@ header .header__right .header__right--signup .header__right--register {
 }
 .product .product__text {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 19px;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
 }
 .product .product__content {
-  padding: 45px 65px 0;
+  padding: 46px 65px 0;
 }
 .product .product__content .product__item--top {
   display: flex;
@@ -253,17 +258,28 @@ header .header__right .header__right--signup .header__right--register {
 .product .product__content .product__item .product__item--content .product__item--img img {
   width: 100%;
 }
-.product .product__content .product__item .product__item--content .product__item--name {
-  padding: 0 25px;
+.product .product__content .product__item .product__item--content .product__item--text {
+  position: absolute;
+  bottom: 77px;
+  padding: 0 24px;
+}
+.product .product__content .product__item .product__item--content .product__item--text .product__item--name {
   font-size: 24px;
   line-height: 29px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
-.product .product__content .product__item .product__item--content .product__item--descrip {
-  padding: 0 25px;
+.product .product__content .product__item .product__item--content .product__item--text .product__item--descrip {
   margin-top: 5px;
   font-size: 20px;
   line-height: 24px;
   color: #cbc9c9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .product .product__content .product__item .product__item--content .product__item--buy {
   position: absolute;

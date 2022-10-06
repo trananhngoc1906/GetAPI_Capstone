@@ -1,0 +1,140 @@
+.register {
+  margin: auto;
+  width: 1280px;
+  height: 538px;
+  background: $color-white-2;
+  position: relative;
+  .error {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    color: $color-red-1;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    display: none;
+  }
+  .register__text {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    padding: 31px;
+  }
+  #submit {
+    background: $color-pink;
+    color: $color-white-2;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    border: transparent;
+    padding: 7px 99px;
+    cursor: pointer;
+    position: absolute;
+    right: 288px;
+    bottom: 40px;
+  }
+  .register__form {
+    display: flex;
+    .register__left {
+      padding: 32px 50px 0 122px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      & > div {
+        position: relative;
+        border-bottom: 5px solid $color-pink;
+        margin-bottom: 29px;
+      }
+      input {
+        &::placeholder {
+          color: $color-black;
+        }
+        display: block;
+        border: none;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 8px;
+      }
+      label {
+        &::after {
+          content: "(*)";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: red;
+        }
+      }
+    }
+    .register__right {
+      padding: 32px 103px 0 50px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      & > div {
+        position: relative;
+        border-bottom: 5px solid $color-pink;
+        margin-bottom: 29px;
+      }
+      input {
+        &::placeholder {
+          color: $color-black;
+        }
+
+        border: none;
+
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 8px;
+      }
+    }
+    .register__gender {
+      position: absolute;
+      bottom: 175px;
+      right: 83px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      #errorGender {
+        position: absolute;
+        font-size: 16px;
+        color: red;
+        display: none;
+      }
+      input[type="radio"] {
+        display: none;
+        &:checked + label:after {
+          width: 39px;
+          height: 30px;
+          border-radius: 50%;
+          position: absolute;
+          top: 30%;
+          transform: translateY(-50%);
+          left: -30px;
+          content: "";
+          background: $color-pink;
+        }
+      }
+      label {
+        padding-left: 35px;
+        position: relative;
+        margin-left: 73px;
+
+        line-height: 20px;
+        &:before {
+          width: 65px;
+          height: 50px;
+          border-radius: 50%;
+          position: absolute;
+          top: 30%;
+          transform: translateY(-50%);
+          left: -44px;
+          content: "";
+          background: $color-bg-radio;
+        }
+      }
+    }
+  }
+}

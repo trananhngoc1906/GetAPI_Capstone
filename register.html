@@ -47,7 +47,53 @@
    </div>
     
 </section>
-<section class="register"></section>
+
+<section class="register">
+  <div class="register__text">
+    Register
+  </div>
+  <form class="register__form">
+    <div class="register__left">
+     <div>
+        <input id="email" type="email" placeholder="email">
+        <span class="error" id="errorEmail"></span>
+      </div>
+      
+    <div>  <input id="Pass" type="password" placeholder="password"><span class="error " id="errorPass1"></span></div>
+   <div>   <input id="rePass" type="password"placeholder="password confirm"><span class="error " id="errorPass2"></span>
+   </div></div>
+    <div class="register__right">
+      <div>
+        <input id="name" type="text"placeholder="name"><span class="error" id="errorName"></span>
+      </div>
+      <div><input id="phone" type="text"placeholder="phone"><span class="error" id="errorPhone"></span></div>
+      
+    </div>
+    <div class="register__gender">Gender
+           <input type="radio" name="gender" id="male" value="true" checked>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="0">
+      <label for="female">Female</label>
+      <div id="errorGender">(*)Vui lòng chọn giới tính</div>
+    </div>
+  </form>
+  <input id="submit" type="submit">
+</section>
 <footer></footer>
+
+
+<!-- AXIOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js" integrity="sha512-26uCxGyoPL1nESYXHQ+KUmm3Maml7MEQNWU8hIt1hJaZa5KQAQ5ehBqK6eydcCOh6YAuZjV3augxu/5tY4fsgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./src/model/member.js"></script>
+<script src="./src/model/validation.js"></script>
+<script src="./src/controller/register.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

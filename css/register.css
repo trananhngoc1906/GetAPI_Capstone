@@ -12,6 +12,10 @@ li {
   list-style: none;
 }
 
+input {
+  outline: none;
+}
+
 body,
 html {
   font-family: "Inter", sans-serif;
@@ -112,6 +116,154 @@ header .header__right .header__right--signup .header__right--register {
 }
 .nav .nav__content li:nth-child(2), .nav .nav__content li:nth-child(3) {
   opacity: 0.7;
+}
+
+.register {
+  margin: auto;
+  width: 1280px;
+  height: 538px;
+  background: #fffcfc;
+  position: relative;
+}
+.register .error {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  color: #f50e0e;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: none;
+}
+.register .register__text {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  padding: 31px;
+}
+.register #submit {
+  background: #ae18e2;
+  color: #fffcfc;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  border: transparent;
+  padding: 7px 99px;
+  cursor: pointer;
+  position: absolute;
+  right: 288px;
+  bottom: 40px;
+}
+.register .register__form {
+  display: flex;
+}
+.register .register__form .register__left {
+  padding: 32px 50px 0 122px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.register .register__form .register__left > div {
+  position: relative;
+  border-bottom: 5px solid #ae18e2;
+  margin-bottom: 29px;
+}
+.register .register__form .register__left input {
+  display: block;
+  border: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 8px;
+}
+.register .register__form .register__left input::-moz-placeholder {
+  color: #000000;
+}
+.register .register__form .register__left input:-ms-input-placeholder {
+  color: #000000;
+}
+.register .register__form .register__left input::placeholder {
+  color: #000000;
+}
+.register .register__form .register__left label::after {
+  content: "(*)";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+.register .register__form .register__right {
+  padding: 32px 103px 0 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.register .register__form .register__right > div {
+  position: relative;
+  border-bottom: 5px solid #ae18e2;
+  margin-bottom: 29px;
+}
+.register .register__form .register__right input {
+  border: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 8px;
+}
+.register .register__form .register__right input::-moz-placeholder {
+  color: #000000;
+}
+.register .register__form .register__right input:-ms-input-placeholder {
+  color: #000000;
+}
+.register .register__form .register__right input::placeholder {
+  color: #000000;
+}
+.register .register__form .register__gender {
+  position: absolute;
+  bottom: 175px;
+  right: 83px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+.register .register__form .register__gender #errorGender {
+  position: absolute;
+  font-size: 16px;
+  color: red;
+  display: none;
+}
+.register .register__form .register__gender input[type=radio] {
+  display: none;
+}
+.register .register__form .register__gender input[type=radio]:checked + label:after {
+  width: 39px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: -30px;
+  content: "";
+  background: #ae18e2;
+}
+.register .register__form .register__gender label {
+  padding-left: 35px;
+  position: relative;
+  margin-left: 73px;
+  line-height: 20px;
+}
+.register .register__form .register__gender label:before {
+  width: 65px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: -44px;
+  content: "";
+  background: #d9d9d9;
 }
 
 footer {

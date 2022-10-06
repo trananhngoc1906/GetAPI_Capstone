@@ -37,24 +37,38 @@
       .product__item--content {
         display: flex;
         flex-direction: column;
+
         .product__item--img {
           padding: 45px 57px;
+
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
-        .product__item--name {
-          padding: 0 25px;
-          font-size: 24px;
-          line-height: 29px;
+        .product__item--text {
+          position: absolute;
+          bottom: 77px;
+          padding: 0 24px;
+          .product__item--name {
+            font-size: 24px;
+            line-height: 29px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+          }
+          .product__item--descrip {
+            margin-top: 5px;
+            font-size: 20px;
+            line-height: 24px;
+            color: $color-gray;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+          }
         }
-        .product__item--descrip {
-          padding: 0 25px;
-          margin-top: 5px;
-          font-size: 20px;
-          line-height: 24px;
-          color: $color-gray;
-        }
+
         .product__item--buy {
           position: absolute;
           bottom: 0;
