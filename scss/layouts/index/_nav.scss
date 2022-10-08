@@ -14,7 +14,8 @@
     li {
       display: inline-block;
       margin-right: 30px;
-      &:first-child {
+      &:first-of-type,
+      &:nth-of-type(6) {
         font-weight: 400;
         position: relative;
         &::after {
@@ -22,6 +23,20 @@
           content: "";
           height: 2px;
           width: 60px;
+          background: $color-black-3;
+          position: absolute;
+          left: -2px;
+          bottom: -8px;
+        }
+      }
+      &:last-of-type {
+        font-weight: 400;
+        position: relative;
+        &::after {
+          display: block;
+          content: "";
+          height: 2px;
+          width: 80px;
           background: $color-black-3;
           position: absolute;
           left: -2px;

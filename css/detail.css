@@ -100,15 +100,29 @@ header .header__right .header__right--signup .header__right--register {
   display: inline-block;
   margin-right: 30px;
 }
-.nav .nav__content li:first-child {
+.nav .nav__content li:first-of-type, .nav .nav__content li:nth-of-type(6) {
   font-weight: 400;
   position: relative;
 }
-.nav .nav__content li:first-child::after {
+.nav .nav__content li:first-of-type::after, .nav .nav__content li:nth-of-type(6)::after {
   display: block;
   content: "";
   height: 2px;
   width: 60px;
+  background: #030303;
+  position: absolute;
+  left: -2px;
+  bottom: -8px;
+}
+.nav .nav__content li:last-of-type {
+  font-weight: 400;
+  position: relative;
+}
+.nav .nav__content li:last-of-type::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 80px;
   background: #030303;
   position: absolute;
   left: -2px;
