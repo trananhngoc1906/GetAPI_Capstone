@@ -100,11 +100,11 @@ header .header__right .header__right--signup .header__right--register {
   display: inline-block;
   margin-right: 30px;
 }
-.nav .nav__content li:first-of-type, .nav .nav__content li:nth-of-type(6) {
+.nav .nav__content li:first-of-type {
   font-weight: 400;
   position: relative;
 }
-.nav .nav__content li:first-of-type::after, .nav .nav__content li:nth-of-type(6)::after {
+.nav .nav__content li:first-of-type::after {
   display: block;
   content: "";
   height: 2px;

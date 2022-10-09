@@ -14,8 +14,7 @@
     li {
       display: inline-block;
       margin-right: 30px;
-      &:first-of-type,
-      &:nth-of-type(6) {
+      &:first-of-type {
         font-weight: 400;
         position: relative;
         &::after {

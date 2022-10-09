@@ -100,11 +100,11 @@ header .header__right .header__right--signup .header__right--register {
   display: inline-block;
   margin-right: 30px;
 }
-.nav .nav__content li:first-of-type, .nav .nav__content li:nth-of-type(6) {
+.nav .nav__content li:first-of-type {
   font-weight: 400;
   position: relative;
 }
-.nav .nav__content li:first-of-type::after, .nav .nav__content li:nth-of-type(6)::after {
+.nav .nav__content li:first-of-type::after {
   display: block;
   content: "";
   height: 2px;
@@ -213,27 +213,26 @@ header .header__right .header__right--signup .header__right--register {
 }
 .product .product__content {
   padding: 65px 65px;
-}
-.product .product__content .product__item--top {
   display: flex;
-}
-.product .product__content .product__item--top .product__item:last-child {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.product .product__content .product__item--top .product__item:last-child .product__item--content .product__item--buy .product__item--price {
-  font-weight: 800;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.product .product__content .product__item--bot {
-  display: flex;
+  flex-wrap: wrap;
 }
 .product .product__content .product__item {
   position: relative;
   width: 334px;
   height: 369px;
-  margin: 25px 35px;
+  margin: 0 auto;
   background: #f8f8f8;
   font-weight: 300;
+}
+.product .product__content .product__item:nth-of-type(4), .product .product__content .product__item:nth-of-type(5), .product .product__content .product__item:nth-of-type(6) {
+  margin-top: 50px;
+}
+.product .product__content .product__item:nth-of-type(3) {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product .product__content .product__item:nth-of-type(3) .product__item--content .product__item--buy .product__item--price {
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .product .product__content .product__item .product__item--content {
   display: flex;
@@ -285,6 +284,9 @@ header .header__right .header__right--signup .header__right--register {
   width: 175px;
   height: 64px;
   background: #e1b067;
+}
+.product .product__content .product__item .product__item--content .product__item--buy .product__item--btn a {
+  color: #000000;
 }
 .product .product__content .product__item .product__item--content .product__item--buy .product__item--price {
   display: flex;
